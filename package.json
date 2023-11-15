@@ -5,6 +5,7 @@
   "main": "dist/cjs/index.js",
   "module": "dist/index.js",
   "types": "dist/types/index.d.ts",
+  "private": false,
   "files": [
     "dist"
   ],
@@ -12,7 +13,6 @@
     "copy:package.cjs.json": "cp ./package.cjs.json ./dist/cjs/package.json && cp ./package.cjs.json ./dist/types/package.json ",
     "build": "rimraf dist && tsx ./build.ts && yarn copy:package.cjs.json"
   },
-  "keywords": [],
   "author": "wangkris03 (https://github.com/wangkris03)",
   "license": "MIT",
   "repository": {
@@ -22,6 +22,15 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
+  "keywords": [
+    "web",
+    "tools",
+    "esm",
+    "cjs",
+    "fastly",
+    "esbuild",
+    "nodejs"
+  ],
   "devDependencies": {
     "@types/glob": "^8.0.0",
     "@types/node": "^20.8.2",
